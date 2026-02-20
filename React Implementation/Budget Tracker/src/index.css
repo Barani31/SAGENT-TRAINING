@@ -1,0 +1,43 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --white: #ffffff;
+  --bg: #f4f7f6;
+  --green-50: #edf7f0;
+  --green-100: #c6e8d0;
+  --green-400: #48bb78;
+  --green-500: #38a169;
+  --green-600: #2f855a;
+  --green-700: #276749;
+  --text-dark: #1a2e22;
+  --text-mid: #4a5568;
+  --text-light: #718096;
+  --border: #c6e8d0;
+  --shadow: 0 2px 12px rgba(56,161,105,0.08);
+  --shadow-md: 0 4px 24px rgba(56,161,105,0.14);
+  --radius: 12px;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text-dark);
+  min-height: 100vh;
+}
+
+button { cursor: pointer; font-family: inherit; transition: all 0.15s; }
+button:active { transform: scale(0.98); }
+a { text-decoration: none; color: inherit; }
+input, select, textarea { font-family: inherit; }
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--green-400) !important;
+  box-shadow: 0 0 0 3px rgba(56,161,105,0.12);
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--green-100); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--green-400); }
+
+tbody tr:hover { background: var(--green-50) !important; transition: background 0.12s; }
