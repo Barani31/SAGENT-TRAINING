@@ -1,0 +1,31 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --white: #ffffff;
+  --bg: #f0f7ff;
+  --blue-50: #e8f4fd;
+  --blue-100: #d0e9fb;
+  --blue-200: #a8d4f5;
+  --blue-400: #4fa8e8;
+  --blue-500: #2196f3;
+  --blue-600: #1976d2;
+  --blue-700: #1565c0;
+  --text-dark: #1a2744;
+  --text-mid: #4a5568;
+  --text-light: #718096;
+  --border: #d0e9fb;
+  --shadow: 0 2px 12px rgba(33,150,243,0.08);
+  --shadow-md: 0 4px 24px rgba(33,150,243,0.14);
+  --radius: 12px;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text-dark);
+  min-height: 100vh;
+}
+
+button { cursor: pointer; font-family: inherit; }
+a { text-decoration: none; color: inherit; }
+input, select, textarea { font-family: inherit; }
